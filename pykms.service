@@ -1,0 +1,13 @@
+[Unit]
+Description=pyKMS
+After=network.target
+Documentation=man:socat(1)
+
+[Service]
+ExecStart=python3 /usr/local/PyKMIP/bin/run_server.py
+Restart=on-success
+
+
+[Install]
+WantedBy=multi-user.target
+
