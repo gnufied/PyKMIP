@@ -55,7 +55,7 @@ setuptools.setup(
         "enum-compat",
         "requests",
         "six",
-        "sqlalchemy"
+        "sqlalchemy==1.4.46"
     ],
     classifiers=[
         "Intended Audience :: Developers",
