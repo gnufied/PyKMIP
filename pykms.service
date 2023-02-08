@@ -5,7 +5,8 @@ Documentation=man:socat(1)
 
 [Service]
 ExecStart=python3 /usr/local/PyKMIP/bin/run_server.py
-Restart=on-success
+Restart=on-failure
+RestartSec=5s
 
 
 [Install]
